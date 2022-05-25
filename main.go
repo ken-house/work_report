@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"tapd/work_report/xlsx/config"
-	"tapd/work_report/xlsx/controller"
+	"github.com/work_report/xlsx/config"
+	"github.com/work_report/xlsx/controller"
 )
 
 var (

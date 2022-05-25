@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 	"github.com/shakinm/xlsReader/xls"
+	"github.com/work_report/xlsx/config"
 	"github.com/xuri/excelize/v2"
 	"os"
 	"path/filepath"
 	"strconv"
 	"sync"
-	"tapd/work_report/xlsx/config"
 	"time"
 )
 
@@ -198,7 +198,7 @@ func (x *XlsxController) ExportXlsx(savePath string, projectList []config.Projec
 		fmt.Printf("newOrOpenXlsxFile err:%v\n", err)
 		return err
 	}
-	
+
 	// 设置行宽
 	f.SetColWidth(globalSheetName, "A", "A", 32.00)
 	f.SetColWidth(globalSheetName, "B", "B", 10.00)
